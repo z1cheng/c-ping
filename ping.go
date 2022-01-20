@@ -56,7 +56,7 @@ func main() {
 		fmt.Println(err.Error())
 		return
 	}
-	conn.SetReadDeadline((time.Now().Add(3 * time.Second)))
+	conn.SetReadDeadline(time.Now().Add(3 * time.Second))
 
 	// Receive the reply
 	startTime := time.Now()
